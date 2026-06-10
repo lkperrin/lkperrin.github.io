@@ -1,26 +1,35 @@
-Two things to fix — style only, no content changes:
+Three small additions — no style changes, just functionality:
 
-**1. Homepage navigation (index.html + style.css)**
-Replace the 4 nav cards (boxes with icons) with a clean minimal list:
-- 4 items stacked vertically, left-aligned
-- Each item: a simple dash or thin horizontal rule as bullet, 
-  the label in medium-weight serif, and an arrow "→" on the right
-- Subtle hover effect: the arrow shifts right by 4px
-- No borders, no backgrounds, no icons — just typography and spacing
-- The list should feel like a refined editorial index
+**1. education.html — IELTS certificate link**
 
-**2. Visual consistency across all pages (style.css + all HTML files)**
-Currently each sub-page has a completely different layout style 
-(timeline with circles on experience.html, border-left cards on 
-education.html, flat cards on works.html). Unify them:
-- Pick ONE single card style and apply it to all sub-pages: 
-  white background, 1px solid #e0e0e0 border, no border-left accent, 
-  no timeline circles, no colored dots
-- The date/period label should look the same on every page: 
-  small, uppercase, letter-spaced, muted color
-- The page title (h1) style should be identical on every page
-- "← Back" button style should be identical on every page
+On the IELTS certification item, add a small link "View certificate →" 
 
-**3. replace stylized "&" with real ones (& normal)**
+that opens assets/pdf/IELTS.pdf in a new tab.
 
-Show me the result and wait for approval before committing.
+**2. works.html — Exail project poster link**
+
+On the "Decision Support Interface for Production Non-Conformity 
+
+Resolution" project card, add a small link "View poster →" that opens 
+
+assets/pdf/poster_exail.pdf in a new tab.
+
+**3. Clickable institution names**
+
+Add href links on the following institution/company names 
+
+(open in new tab):
+
+- "IMT Atlantique" → https://www.imt-atlantique.fr
+
+- "Escola Politécnica, UFRJ" → https://poli.ufrj.br
+
+- "CEA" → https://irfu.cea.fr/dap/le-departement-d-astrophysique-umr-aim-dap/
+
+- "Gaming Innovation Group (GIG)" → https://www.gig.com
+
+- "KNDS" → https://www.knds.com
+
+Style for all links: no underline by default, subtle underline on hover, 
+
+inherit the current text color — discreet, not styled as buttons.
