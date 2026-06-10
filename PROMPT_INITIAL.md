@@ -1,27 +1,26 @@
-I want to redesign the visual style of the portfolio to make it more 
-professional and less "AI-generated looking". Do NOT touch any content 
-or structure — only CSS and the emoji icons.
+Two things to fix — style only, no content changes:
 
-Changes to make:
+**1. Homepage navigation (index.html + style.css)**
+Replace the 4 nav cards (boxes with icons) with a clean minimal list:
+- 4 items stacked vertically, left-aligned
+- Each item: a simple dash or thin horizontal rule as bullet, 
+  the label in medium-weight serif, and an arrow "→" on the right
+- Subtle hover effect: the arrow shifts right by 4px
+- No borders, no backgrounds, no icons — just typography and spacing
+- The list should feel like a refined editorial index
 
-1. **Remove all emojis** across all HTML files. Replace them with clean 
-   inline SVG icons (minimal, monochrome, stroke-based — similar to 
-   Feather Icons style).
+**2. Visual consistency across all pages (style.css + all HTML files)**
+Currently each sub-page has a completely different layout style 
+(timeline with circles on experience.html, border-left cards on 
+education.html, flat cards on works.html). Unify them:
+- Pick ONE single card style and apply it to all sub-pages: 
+  white background, 1px solid #e0e0e0 border, no border-left accent, 
+  no timeline circles, no colored dots
+- The date/period label should look the same on every page: 
+  small, uppercase, letter-spaced, muted color
+- The page title (h1) style should be identical on every page
+- "← Back" button style should be identical on every page
 
-2. **Redesign style.css**:
-   - Replace the current color palette with something more restrained: 
-     near-white background, dark charcoal text, one single muted accent 
-     color (e.g. a slate blue or warm grey — no green)
-   - Remove rounded corners on the nav cards — use subtle rectangular 
-     cards with a thin border instead
-   - Typography: switch to a classic serif for the name/titles 
-     (e.g. Playfair Display or Libre Baskerville) paired with a clean 
-     sans-serif for body text (e.g. Inter)
-   - Remove any box-shadows that look decorative — keep only functional 
-     ones if needed
-   - I want the website to be more like human made, it is too AI designed so far and looks too cheap
-3. **change disposition** 
-    - change the place of linkedin github and CV buttons (higher near my name etc)
-4. Show me the result and wait for my approval before committing.
+**3. replace stylized "&" with real ones (& normal)**
 
-
+Show me the result and wait for approval before committing.
