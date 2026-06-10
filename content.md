@@ -9,7 +9,9 @@
 
 - **Full Name**: Lucas Perrin
 - **Professional Title**: Student at IMT Atlantique - Research Intern at CEA
-- **Short Bio**: 2-3 sentences introducing yourself. e.g. "I am a researcher specializing in... passionate about... currently working at..."
+- **Short Bio**: Engineering student at IMT Atlantique, specializing in AI and data processing with a focus on computer vision, object detection, and synthetic data generation. Currently on a gap year after a data science exchange at UFRJ (Brazil) and a machine learning internship at Gaming Innovation Group, where I worked on fraud detection and predictive modeling.
+I'm now looking for a 6-month final-year internship starting April 2027 in applied research — ideally in the space sector, working on topics like signal processing, satellite data analysis, or embedded AI.
+Curious, hands-on, and always keen to tackle complex problems at the intersection of AI and real-world applications.
 - **Email**: lucas.perrin@imt-atlantique.net
 - **LinkedIn URL**: www.linkedin.com/in/lucasperrin426
 - **GitHub URL**: https://github.com/lkperrin
