@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
-/* Render & with a neutral system font instead of Playfair's ornate glyph */
-@font-face {
-  font-family: 'Playfair Display';
-  src: local('Arial'), local('Helvetica');
-  font-weight: 100 900;
-  unicode-range: U+0026;
-}
-@font-face {
-  font-family: 'Playfair Display';
-  src: local('Arial'), local('Helvetica');
-  font-weight: 100 900;
-  font-style: italic;
-  unicode-range: U+0026;
-}
-
 /* ===== VARIABLES ===== */
 :root {
   --color-bg:       #f8f7f2;
@@ -189,7 +174,7 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-list__label {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.05rem;
   font-weight: 400;
   flex: 1;
@@ -238,7 +223,7 @@ img { max-width: 100%; display: block; }
 .back-btn:hover { color: var(--color-primary); }
 
 .inner-header__title {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--color-primary);
@@ -275,7 +260,7 @@ img { max-width: 100%; display: block; }
 .timeline__title,
 .work-card__title,
 .education__degree {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--color-primary);
@@ -438,7 +423,7 @@ img { max-width: 100%; display: block; }
 .interest-card__icon svg { width: 24px; height: 24px; }
 
 .interest-card__title {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--color-primary);
