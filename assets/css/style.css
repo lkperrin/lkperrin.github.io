@@ -191,7 +191,7 @@ img { max-width: 100%; display: block; }
 .nav-list__label {
   font-family: var(--font-display);
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 400;
   flex: 1;
 }
 
