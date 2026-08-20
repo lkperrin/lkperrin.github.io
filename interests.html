@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interests — Lucas Perrin</title>
+  <title>Interests &amp; Involvement — Lucas Perrin</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
@@ -16,12 +16,22 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
           Back
         </a>
-        <h1 class="inner-header__title">Interests & Hobbies</h1>
+        <h1 class="inner-header__title">Interests &amp; Involvement</h1>
       </div>
     </header>
 
     <main class="inner-content">
-      <ul class="interests-grid" aria-label="Interests and hobbies">
+      <ul class="interests-grid interests-grid--four" aria-label="Interests">
+
+        <li class="interest-card">
+          <div class="interest-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h2 class="interest-card__title">Chess</h2>
+          <p class="interest-card__description">
+            Active player and coach. 2000+ on chess.com, still learning and improving.
+          </p>
+        </li>
 
         <li class="interest-card">
           <div class="interest-card__icon" aria-hidden="true">
@@ -56,17 +66,26 @@
           </p>
         </li>
 
-        <li class="interest-card">
-          <div class="interest-card__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          </div>
-          <h2 class="interest-card__title">Chess</h2>
-          <p class="interest-card__description">
-            Active player and coach. 2000+ on chess.com, still learning and improving.
-          </p>
-        </li>
-
       </ul>
+
+      <!-- Associative involvement -->
+      <section class="involvement" aria-label="Associative involvement">
+        <h2 class="involvement__title">Associative Involvement</h2>
+        <ul class="involvement-list">
+          <li class="involvement__item">
+            <span class="involvement__label">Communications Officer</span> — IMT Atlantique Student Union (BDE)
+          </li>
+          <li class="involvement__item">
+            <span class="involvement__label">Sports Coordinator, Atlanticup 2024</span> — 900 participants, over &euro;25,000 budget
+          </li>
+          <li class="involvement__item">
+            <span class="involvement__label">President</span> — IMT Atlantique Brest football club
+          </li>
+          <li class="involvement__item">
+            <span class="involvement__label">Chess Instructor &amp; Volunteer</span> — Plouzan&eacute; chess club and the ChessBar app
+          </li>
+        </ul>
+      </section>
     </main>
 
   </div>

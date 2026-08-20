@@ -29,40 +29,47 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 - **Company**: CEA
 - **Period**: March 2026 - Present
 - **Description**: My intership is on Asteroseismology ; I am working on new implementations for rotation profile inversions on Red giant branch (RGB). Also bringing some Machine learning solutions.
-- **Skills / Tech**: Python, Astrophysics, Linear algebra
+- **Skills / Tech**: Python, Asteroseismology, Linear Algebra, Machine Learning, Signal Processing, Paper redaction
 
 ### Position 2
 - **Title**: Data Scientist Intern
 - **Company**: Gaming Innovation Group (GIG)
 - **Period**: August 2025 — February 2026
 - **Description**: Dashboard creation (Tableau & Power BI), fraud detection, and development of Machine Learning models including revenue prediction and player classification.
-- **Skills / Tech**: Python, Machine Learning, Tableau, Power BI
+- **Skills / Tech**: Python, Machine Learning, Tableau, Power BI, Fraud Detection, Data Visualization
 
 ### Position 3
 - **Title**: Operator Intern
 - **Company**: KNDS
 - **Period**: June 2024 — July 2024
 - **Description**: Contribution to the renovation of VBCI armored vehicles. Immersion in an industrial environment with observation of engineering and production processes.
-- **Skills / Tech**: Industrial processes, engineering documentation
+- **Skills / Tech**: Industrial Processes, Engineering Documentation, Vehicle Renovation
 ---
 
 ## Works & Publications
 
-### Publication / Project 1
+### Publication / Project 1 (in preparation)
+- **Title**: Rotation Rate Inversions in Red Giant Branch Stars Accounting for Near-Degeneracy Effects
+- **Date**: 2026
+- **Type**: Paper in preparation, soon published
+- **Description**: Co-author of an international collaboration paper on new methods for rotation profile inversions in RGB stars, addressing near-degeneracy effects in mixed modes.
+- **Link**: 
+
+### Publication / Project 2
 - **Title**: Poster presentation at TASK/KASC workshop (Asteroseismology)
 - **Date**: June 2026
 - **Type**: Scientific poster
 - **Description**: Realization and presentation of a scientific poster at the TASK/KASC workshop in the field of asteroseismology.
 - **Link**: 
 
-### Publication / Project 2
+### Publication / Project 3
 - **Title**: Decision support interface for production non-conformity resolution
 - **Date**: January 2025
 - **Type**: Academic project (commissioned by Exail)
 - **Description**: Development of a decision support interface to assist in resolving production non-conformities. Involved machine learning, software development, data processing, and project management.
 - **Link**: 
 
-### Publication / Project 3
+### Publication / Project 4
 - **Title**: AIS satellite communication detection in the presence of multiple access interference
 - **Date**: 2024
 - **Type**: Co-development project
@@ -95,12 +102,43 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 
 ---
 
-## Interests & Hobbies
+## Skills
+
+### Coding
+- **Description**: XXXX
+- **Items**: XXXX, XXXX, XXXX, XXXX, XXXX
+
+### Machine Learning & Data
+- **Description**: XXXX
+- **Items**: XXXX, XXXX, XXXX, XXXX
+
+### Tools
+- **Description**: XXXX
+- **Items**: XXXX, XXXX, XXXX, XXXX, XXXX, XXXX
+
+### Scientific Domains
+- **Description**: XXXX
+- **Items**: XXXX, XXXX, XXXX
+
+### Languages
+- XXXX — XXXX
+- XXXX — XXXX
+- XXXX — XXXX
+
+---
+
+## Interests & Involvement
 
 - **Football**: Playing and following football competitively — co-president of the IMT Atlantique football club.
 - **Astrophysics & Cosmology**: Passionate about space science, from stellar physics to the large-scale structure of the universe.
 - **Artificial Intelligence**: Keeping up with the latest research and breakthroughs in AI — from new architectures to real-world applications.
 - **Chess**: Active player and coach.
+
+### Associative Involvement
+- **Communications Officer** — IMT Atlantique Student Union (BDE)
+- **Sports Coordinator, Atlanticup 2024** — 900 participants, over 25,000 € budget
+- **President** — IMT Atlantique Brest football club
+- **Chess Instructor & Volunteer** — Plouzané chess club and the ChessBar app
 ---
 
 ## Social Links & CV
