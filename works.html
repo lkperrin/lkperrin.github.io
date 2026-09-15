@@ -3,58 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Works &amp; Publications — Lucas Perrin</title>
+  <title data-i18n="page.title.works">Works &amp; Publications — Lucas Perrin</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
 <body>
+  <!-- Language switch -->
+  <div class="lang-switch" role="group" data-i18n-aria="lang.aria" aria-label="Language selection">
+    <button type="button" class="lang-switch__btn" data-lang="fr" aria-pressed="false">FR</button>
+    <span class="lang-switch__sep" aria-hidden="true">/</span>
+    <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="true">ENG</button>
+  </div>
+
   <div class="page-wrapper">
 
     <header class="inner-header">
       <div class="inner-header__inner">
-        <a href="index.html" class="back-btn" aria-label="Back to home">
+        <a href="index.html" class="back-btn" data-i18n-aria="back.aria" aria-label="Back to home">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-          Back
+          <span data-i18n="back">Back</span>
         </a>
-        <h1 class="inner-header__title">Works &amp; Publications</h1>
+        <h1 class="inner-header__title" data-i18n="works.heading">Works &amp; Publications</h1>
       </div>
     </header>
 
     <main class="inner-content">
-      <ul class="works-list" aria-label="Works and publications">
+      <ul class="works-list" data-i18n-aria="works.aria" aria-label="Works and publications">
 
         <!-- Project 1 — most recent -->
         <li class="work-card">
           <div class="work-card__meta">
-            <span class="work-card__date">July 2026</span>
-            <span class="work-card__type">Scientific Poster</span>
+            <span class="work-card__date" data-i18n="works.1.date">July 2026</span>
+            <span class="work-card__type" data-i18n="works.1.type">Scientific Poster</span>
           </div>
-          <h2 class="work-card__title">Poster Presentation at TASC10/KASC17 Workshop (Asteroseismology)</h2>
-          <p class="work-card__description">
+          <h2 class="work-card__title" data-i18n="works.1.title">Poster Presentation at TASC10/KASC17 Workshop (Asteroseismology)</h2>
+          <p class="work-card__description" data-i18n="works.1.description">
             Realization and presentation of a scientific poster at the TASC10/KASC17 workshop in the
             field of asteroseismology.
           </p>
           <div class="work-card__links">
-            <a href="assets/pdf/abstract_tasc.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link">Abstract</a>
-            <a href="assets/pdf/Poster_TASC_KASC.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link">Poster</a>
+            <a href="assets/pdf/abstract_tasc.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link" data-i18n="works.1.link1">Abstract</a>
+            <a href="assets/pdf/Poster_TASC_KASC.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link" data-i18n="works.1.link2">Poster</a>
           </div>
         </li>
 
         <!-- Project 2 -->
         <li class="work-card">
           <div class="work-card__meta">
-            <span class="work-card__date">January 2025</span>
-            <span class="work-card__type">Academic Project — Exail</span>
+            <span class="work-card__date" data-i18n="works.2.date">January 2025</span>
+            <span class="work-card__type" data-i18n="works.2.type">Academic Project — Exail</span>
           </div>
-          <h2 class="work-card__title">Decision Support Interface for Production Non-Conformity Resolution</h2>
-          <p class="work-card__description">
+          <h2 class="work-card__title" data-i18n="works.2.title">Decision Support Interface for Production Non-Conformity Resolution</h2>
+          <p class="work-card__description" data-i18n="works.2.description">
             Development of a decision support interface to assist in resolving production
             non-conformities. Involved machine learning, software development, data processing,
             and project management.
           </p>
           <div class="work-card__links">
-            <a href="assets/pdf/poster_exail.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link">Poster</a>
-            <a href="assets/pdf/slides_exail.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link">Slides</a>
+            <a href="assets/pdf/poster_exail.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link" data-i18n="works.2.link1">Poster</a>
+            <a href="assets/pdf/slides_exail.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link" data-i18n="works.2.link2">Slides</a>
           </div>
         </li>
 
@@ -62,21 +69,22 @@
         <li class="work-card">
           <div class="work-card__meta">
             <span class="work-card__date">2024</span>
-            <span class="work-card__type">Co-development Project</span>
+            <span class="work-card__type" data-i18n="works.3.type">Co-development Project</span>
           </div>
-          <h2 class="work-card__title">AIS Satellite Communication Detection in the Presence of Multiple Access Interference</h2>
-          <p class="work-card__description">
+          <h2 class="work-card__title" data-i18n="works.3.title">AIS Satellite Communication Detection in the Presence of Multiple Access Interference</h2>
+          <p class="work-card__description" data-i18n="works.3.description">
             Detection of AIS communications by satellite in the presence of multiple access
             interference. Involved signal processing, satellite specifications study, project
             management, MATLAB, and Python.
           </p>
-          <a href="assets/pdf/projet_codev.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link">Report</a>
+          <a href="assets/pdf/projet_codev.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link" data-i18n="works.3.link1">Report</a>
         </li>
 
       </ul>
     </main>
 
   </div>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
