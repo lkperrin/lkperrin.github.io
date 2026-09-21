@@ -24,6 +24,7 @@ const TRANSLATIONS = {
     'profile.link.github.aria': 'GitHub profile',
     'profile.link.cv': 'CV',
     'profile.link.cv.aria': 'Download CV',
+    'profile.link.cv.href': 'assets/pdf/cv_eng.pdf',
     'profile.bio1': 'Engineering student in my final year at IMT Atlantique, specializing in advanced optimization methods; constraint programming, linear programming, and related techniques.',
     'profile.bio2': 'During previous years, I did a data science exchange at UFRJ (Rio de Janeiro), a machine learning internship at Gaming Innovation Group, and a research internship at CEA on asteroseismology.',
     'profile.bio3': 'I am looking for a 6-month final-year internship starting April 2027. Curious and motivated, I enjoy tackling complex problems where I can apply my skills in optimization and machine learning, in industry or scientific research.',
@@ -120,6 +121,7 @@ const TRANSLATIONS = {
     'profile.link.github.aria': 'Profil GitHub',
     'profile.link.cv': 'CV',
     'profile.link.cv.aria': 'Télécharger le CV',
+    'profile.link.cv.href': 'assets/pdf/cv.pdf',
     'profile.bio1': "Élève ingénieur en dernière année à IMT Atlantique, actuellement en spécialisation Méthodes Avancées d'Optimisation: programmation sous contraintes, programmation linéaire, et techniques associées.",
     'profile.bio2': "Ces deux dernières années, j'ai fait un échange en data science à l'UFRJ (Rio de Janeiro), un stage en machine learning chez Gaming Innovation Group, et un stage de recherche au CEA en astérosismologie.",
     'profile.bio3': "Je recherche un stage de fin d'études de 6 mois à partir d'avril 2027. Curieux et motivé, j'aime m'attaquer à des problèmes complexes où je peux mettre à profit mes compétences en optimisation et machine learning, dans l'industrie comme dans la recherche scientifique.",
@@ -236,6 +238,11 @@ const applyLang = (lang) => {
   document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
     const value = translate(el.dataset.i18nAria, lang);
     if (value !== undefined) el.setAttribute('aria-label', value);
+  });
+
+  document.querySelectorAll('[data-i18n-href]').forEach((el) => {
+    const value = translate(el.dataset.i18nHref, lang);
+    if (value !== undefined) el.setAttribute('href', value);
   });
 
   document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
