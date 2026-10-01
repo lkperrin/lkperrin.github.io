@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page.title.projects">Personal Projects | Lucas Perrin</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body>
+  <!-- Language switch -->
+  <div class="lang-switch" role="group" data-i18n-aria="lang.aria" aria-label="Language selection">
+    <button type="button" class="lang-switch__btn" data-lang="fr" aria-pressed="false">FR</button>
+    <span class="lang-switch__sep" aria-hidden="true">/</span>
+    <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="true">ENG</button>
+  </div>
+
+  <div class="page-wrapper">
+
+    <header class="inner-header">
+      <div class="inner-header__inner">
+        <a href="index.html" class="back-btn" data-i18n-aria="back.aria" aria-label="Back to home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          <span data-i18n="back">Back</span>
+        </a>
+        <h1 class="inner-header__title" data-i18n="proj.heading">Personal Projects</h1>
+      </div>
+    </header>
+
+    <main class="inner-content">
+      <ul class="works-list" data-i18n-aria="proj.aria" aria-label="Personal projects">
+
+        <li class="work-card">
+          <div class="work-card__meta">
+            <span class="work-card__type" data-i18n="proj.1.type">Personal Project · Website</span>
+          </div>
+          <h2 class="work-card__title" data-i18n="proj.1.title">Astero: Discovering Asteroseismology</h2>
+          <p class="work-card__description" data-i18n="proj.1.description">
+            A website for physics and astrophysics researchers who want to discover asteroseismology,
+            the study of stellar interiors through their oscillations.
+          </p>
+          <div class="work-card__links">
+            <a href="https://website-astero.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-card__link" data-i18n="proj.1.link">Visit the website →</a>
+          </div>
+        </li>
+
+      </ul>
+    </main>
+
+  </div>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

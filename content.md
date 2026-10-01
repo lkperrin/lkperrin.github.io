@@ -34,14 +34,14 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 ### Position 2
 - **Title**: Data Scientist Intern
 - **Company**: Gaming Innovation Group (GIG)
-- **Period**: August 2025 — February 2026
+- **Period**: August 2025 – February 2026
 - **Description**: Dashboard creation (Tableau & Power BI), fraud detection, and development of Machine Learning models including revenue prediction and player classification.
 - **Skills / Tech**: Python, Machine Learning, Tableau, Power BI
 
 ### Position 3
 - **Title**: Operator Intern
 - **Company**: KNDS
-- **Period**: June 2024 — July 2024
+- **Period**: June 2024 – July 2024
 - **Description**: Contribution to the renovation of VBCI armored vehicles. Immersion in an industrial environment with observation of engineering and production processes.
 - **Skills / Tech**: Industrial processes, engineering documentation
 ---
@@ -73,25 +73,25 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 ## Education & Degrees
 
 ### Formation 1 (in progress)
-- **Degree**: Engineering Degree — Specialisation "Observation and Processing for Environmental Data"
+- **Degree**: Engineering Degree, Specialisation "Data Science & Advanced optimization methods"
 - **Institution**: IMT Atlantique
-- **Period**: 2023 — 2027
-- **Details**: Additional modules: "Data Science and Information Processing for sensor data" / "Stochastic dynamic models"
+- **Period**: 2023 – 2027
+- **Details**: Additional modules: "Stochastic Dynamic Models" / "Machine Learning" / "Operations Research"
 
 ### Formation 2 (exchange semester)
-- **Degree**: Data Science & Computer Engineering — Exchange Program
+- **Degree**: Data Science & Computer Engineering, Exchange Program
 - **Institution**: Escola Politécnica, UFRJ
-- **Period**: February — August 2025
+- **Period**: February – August 2025
 - **Details**: Rio de Janeiro, Brazil
 
 ### Formation 3
-- **Degree**: Classes Préparatoires aux Grandes Écoles — PCSI / PC*
+- **Degree**: Classes Préparatoires aux Grandes Écoles (PCSI / PC*)
 - **Institution**: Lycée Claude Fauriel
-- **Period**: 2021 — 2023
+- **Period**: 2021 – 2023
 - **Details**: Saint-Étienne, France
 
 ### Certifications
-- [IELTS 7.0 — 2025]
+- [IELTS 7.0 (2025)]
 
 ---
 
@@ -108,3 +108,10 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 - **LinkedIn**: www.linkedin.com/in/lucasperrin426
 - **GitHub**: https://github.com/lkperrin
 - **CV file**: `assets/pdf/cv.pdf` 
+
+## Personal Projects
+
+### Astero
+- **Type**: Personal project (website)
+- **URL**: https://website-astero.vercel.app/
+- **Description**: Website for physics/astrophysics researchers to discover asteroseismology.
