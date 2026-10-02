@@ -1,0 +1,227 @@
+/* ===== INTERESTS PAGE — scoped to body.page-interests ===== */
+.page-interests {
+  --int-ink:     #f4f2ec;
+  --int-ink-dim: rgba(244, 242, 236, 0.85);
+  --int-line:    rgba(244, 242, 236, 0.16);
+  --int-accent:  #8fb0e0;
+}
+
+.page-interests .inner-header__title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/* Sections */
+.page-section__title {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+.page-section__title::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: 0.6rem;
+  background: var(--color-accent);
+}
+
+/* Divider between the two sections: line — diamond — line */
+.page-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 4rem 0 3.25rem;
+}
+.page-divider::before,
+.page-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+.page-divider::before { background: linear-gradient(90deg, transparent, var(--color-accent)); }
+.page-divider::after  { background: linear-gradient(270deg, transparent, var(--color-accent)); }
+.page-divider__mark {
+  position: relative;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--color-accent);
+  transform: rotate(45deg);
+}
+.page-divider__mark::before {
+  content: "";
+  position: absolute;
+  inset: -0.4rem;
+  border: 1px solid var(--color-accent);
+  opacity: 0.55;
+}
+
+/* Grid */
+.page-interests .inner-content { padding: 2.5rem 1.5rem 4.5rem; }
+.page-interests .inner-header__inner,
+.page-interests .inner-content { max-width: 1240px; }
+
+.page-interests .interests-grid {
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+/* Card */
+.page-interests .interest-card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 18rem;
+  padding: 1.5rem;
+  text-align: left;
+  overflow: hidden;
+  background: #16181d;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  box-shadow: 0 10px 24px -16px rgba(0, 0, 0, 0.5);
+}
+
+/* Photo layer */
+.interest-card__media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  /* shown until a photo is added */
+  background:
+    radial-gradient(rgba(244, 242, 236, 0.1) 1px, transparent 1.5px) 0 0 / 16px 16px,
+    radial-gradient(120% 90% at 85% 0%, rgba(74, 111, 165, 0.55), transparent 60%),
+    linear-gradient(160deg, #22314d 0%, #121722 100%);
+}
+.interest-card__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--focus, 50% 40%);
+  filter: saturate(0.9) brightness(0.9);
+}
+
+/* Readability gradient + accent tint */
+.interest-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(8, 9, 12, 0.15) 0%, rgba(8, 9, 12, 0.55) 45%, rgba(8, 9, 12, 0.94) 100%),
+    linear-gradient(135deg, rgba(74, 111, 165, 0.28), transparent 55%);
+}
+
+/* Thin inner frame */
+.interest-card::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  z-index: -1;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.page-interests .interest-card__title {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--int-ink);
+  margin-bottom: 0.6rem;
+}
+.page-interests .interest-card__title::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: 0.7rem;
+  background: var(--int-accent);
+}
+
+.page-interests .interest-card__description {
+  max-width: 34rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--int-ink-dim);
+}
+
+/* Chess: slow crossfade between the four photos */
+.interest-card__media--slides img {
+  opacity: 0;
+  animation: interest-fade 24s infinite;
+}
+.interest-card__media--slides img:nth-child(1) { opacity: 1; animation-delay: 0s; }
+.interest-card__media--slides img:nth-child(2) { animation-delay: 6s; }
+.interest-card__media--slides img:nth-child(3) { animation-delay: 12s; }
+.interest-card__media--slides img:nth-child(4) { animation-delay: 18s; }
+
+@keyframes interest-fade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  25%  { opacity: 1; }
+  30%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Two-photo variant (community involvement) */
+.interest-card__media--pair img { animation-name: interest-fade-pair; animation-duration: 12s; }
+@keyframes interest-fade-pair {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  50%  { opacity: 1; }
+  55%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Three-photo variant (astrophysics) */
+.interest-card__media--trio img { animation-name: interest-fade-trio; animation-duration: 18s; }
+@keyframes interest-fade-trio {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  33%  { opacity: 1; }
+  38%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* AI: light images (logos, leaderboard) — darken so the text stays legible; the two dark screenshots keep their brightness */
+.interest-card--light .interest-card__media img:is(:first-child, :last-child) { filter: brightness(0.55) saturate(1.1); }
+
+/* Strong figures in descriptions */
+.page-interests .interest-card__description strong {
+  color: var(--int-ink);
+  font-weight: 600;
+}
+
+/* Tablet: 2 columns for hobbies, 3 for involvement */
+@media (min-width: 768px) {
+  .page-interests .interests-grid { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .page-interests .interest-card { min-height: 21rem; padding: 1.5rem; }
+  .page-interests .interest-card__title { font-size: 1.4rem; }
+
+  .page-interests .involve-grid { grid-template-columns: repeat(3, 1fr); }
+  .page-interests .involve-grid .interest-card { min-height: 16rem; padding: 1.35rem; }
+  .page-interests .involve-grid .interest-card__title { font-size: 1.2rem; }
+}
+
+/* Desktop: the 4 hobbies side by side, narrower and taller */
+@media (min-width: 1200px) {
+  .page-interests .interests-grid:not(.involve-grid) { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .page-interests .interests-grid:not(.involve-grid) .interest-card { min-height: 25rem; padding: 1.25rem; }
+  .page-interests .interests-grid:not(.involve-grid) .interest-card__title { font-size: 1.15rem; }
+  .page-interests .interests-grid:not(.involve-grid) .interest-card__description { font-size: 0.85rem; line-height: 1.6; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interest-card__media--slides img { animation: none; }
+  .interest-card__media--slides img:not(:first-child) { display: none; }
+}

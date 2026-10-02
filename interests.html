@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="page.title.interests">Interests | Lucas Perrin</title>
+  <title data-i18n="page.title.interests">Hobbies &amp; Community Involvement | Lucas Perrin</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/interests.css" />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
-<body>
+<body class="page-interests">
   <!-- Language switch -->
   <div class="lang-switch" role="group" data-i18n-aria="lang.aria" aria-label="Language selection">
     <button type="button" class="lang-switch__btn" data-lang="fr" aria-pressed="false">FR</button>
@@ -23,57 +24,122 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
           <span data-i18n="back">Back</span>
         </a>
-        <h1 class="inner-header__title" data-i18n="int.heading">Interests & Hobbies</h1>
+        <h1 class="inner-header__title" data-i18n="int.heading">Hobbies &amp; Community Involvement</h1>
       </div>
     </header>
 
     <main class="inner-content">
-      <ul class="interests-grid" data-i18n-aria="int.aria" aria-label="Interests and hobbies">
+      <!-- ===== HOBBIES ===== -->
+      <section class="page-section" aria-labelledby="hobbies-title">
+        <h2 class="page-section__title" id="hobbies-title" data-i18n="int.hobbies.heading">Hobbies</h2>
 
-        <li class="interest-card">
-          <div class="interest-card__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-          </div>
-          <h2 class="interest-card__title" data-i18n="int.4.title">Chess</h2>
-          <p class="interest-card__description" data-i18n="int.4.description">
-            Active player and coach. 2100+ on chess.com, still learning and improving.
-          </p>
-        </li>
+        <ul class="interests-grid" data-i18n-aria="int.aria" aria-label="Hobbies">
 
-        <li class="interest-card">
-          <div class="interest-card__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h2 class="interest-card__title" data-i18n="int.2.title">Astrophysics & Cosmology</h2>
-          <p class="interest-card__description" data-i18n="int.2.description">
-            Passionate about space science, from stellar physics to the large-scale structure
-            of the universe. Also interested in time-related philosophy and physics.
-          </p>
-        </li>
+          <li class="interest-card" style="--focus: 50% 35%">
+            <div class="interest-card__media interest-card__media--slides" aria-hidden="true">
+              <img src="assets/img/chess1.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/chess2.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/chess3.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/chess4.jpeg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="interest-card__title" data-i18n="int.4.title">Chess</h3>
+            <p class="interest-card__description" data-i18n="int.4.description">
+              Active player and coach. 2100+ on chess.com, still learning and improving.
+            </p>
+          </li>
 
-        <li class="interest-card">
-          <div class="interest-card__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-          </div>
-          <h2 class="interest-card__title" data-i18n="int.3.title">Artificial Intelligence</h2>
-          <p class="interest-card__description" data-i18n="int.3.description">
-            Keeping up with the latest research and breakthroughs in AI; from new architectures
-            to real-world applications.
-          </p>
-        </li>
+          <li class="interest-card interest-card--light" style="--focus: 50% 50%">
+            <div class="interest-card__media interest-card__media--slides" aria-hidden="true">
+              <img src="assets/img/AI1.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/AI2.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/AI4.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/AI3.jpeg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="interest-card__title" data-i18n="int.3.title">Artificial Intelligence</h3>
+            <p class="interest-card__description" data-i18n="int.3.description">
+              Keeping up with the latest research and breakthroughs in AI; from new architectures
+              to real-world applications.
+            </p>
+          </li>
 
-        <li class="interest-card">
-          <div class="interest-card__icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          </div>
-          <h2 class="interest-card__title" data-i18n="int.1.title">Football</h2>
-          <p class="interest-card__description" data-i18n="int.1.description">
-            Playing and following football. Ex President of the IMT Atlantique
-            football club. Unfortunately supporting ASSE...
-          </p>
-        </li>
+          <li class="interest-card" style="--focus: 50% 45%">
+            <div class="interest-card__media interest-card__media--slides interest-card__media--trio" aria-hidden="true">
+              <img src="assets/img/astro2.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/astro1.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/astro3.jpeg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="interest-card__title" data-i18n="int.2.title">Astrophysics & Cosmology</h3>
+            <p class="interest-card__description" data-i18n="int.2.description">
+              Passionate about space science, from stellar physics to the large-scale structure
+              of the universe. Particularly interested in time-related philosophy and physics.
+            </p>
+          </li>
 
-      </ul>
+          <li class="interest-card" style="--focus: 50% 60%">
+            <div class="interest-card__media interest-card__media--slides" aria-hidden="true">
+              <img src="assets/img/foot1.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/foot2.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/foot3.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/foot4.jpeg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="interest-card__title" data-i18n="int.1.title">Football</h3>
+            <p class="interest-card__description" data-i18n="int.1.description">
+              Playing and following football. Ex President of the IMT Atlantique
+              football club. Unfortunately supporting ASSE...
+            </p>
+          </li>
+
+        </ul>
+      </section>
+
+      <div class="page-divider" role="separator"><span class="page-divider__mark" aria-hidden="true"></span></div>
+
+      <!-- ===== COMMUNITY INVOLVEMENT =====
+           Each box has an (empty) media layer ready for photos.
+           To add images, put <img src="assets/img/xxx.jpeg" alt="" loading="lazy" decoding="async" />
+           inside its .interest-card__media div. For several images, also add the class
+           interest-card__media--slides (3 images: + interest-card__media--trio), as in the hobbies above.
+           Optional crop: style="--focus: 50% 40%" on the <li>. -->
+      <section class="page-section page-section--involve" aria-labelledby="involve-title">
+        <h2 class="page-section__title" id="involve-title" data-i18n="inv.heading">Community involvement</h2>
+
+        <ul class="interests-grid involve-grid" data-i18n-aria="inv.aria" aria-label="Community involvement">
+
+          <li class="interest-card" style="--focus: 50% 60%">
+            <div class="interest-card__media interest-card__media--slides interest-card__media--pair" aria-hidden="true">
+              <img src="assets/img/centre_social1.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/centre_social2.jpeg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="interest-card__title" data-i18n="inv.1.title">Private tutoring</h3>
+            <p class="interest-card__description" data-i18n="inv.1.description">
+              Private lessons for struggling students at the La Courte Échelle social center in Brest.
+            </p>
+          </li>
+
+          <li class="interest-card" style="--focus: 50% 40%">
+            <div class="interest-card__media interest-card__media--slides interest-card__media--pair" aria-hidden="true">
+              <img src="assets/img/chessbar1.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/chessbar2.jpeg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="interest-card__title" data-i18n="inv.2.title">Chessbar</h3>
+            <p class="interest-card__description" data-i18n="inv.2.description">
+              Lessons donated via the Chessbar app.
+            </p>
+          </li>
+
+          <li class="interest-card" style="--focus: 50% 40%">
+            <div class="interest-card__media interest-card__media--slides interest-card__media--pair" aria-hidden="true">
+              <img src="assets/img/atlanticup1.jpeg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/img/atlanticup2.jpeg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3 class="interest-card__title" data-i18n="inv.3.title">Atlanticup 2025</h3>
+            <p class="interest-card__description" data-i18n-html="inv.3.description">
+              Head of sports for Atlanticup 2025, with a budget of over <strong>€25k</strong>.
+            </p>
+          </li>
+
+        </ul>
+      </section>
     </main>
 
   </div>
