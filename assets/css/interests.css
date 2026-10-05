@@ -30,34 +30,10 @@
   background: var(--color-accent);
 }
 
-/* Divider between the two sections: line — diamond — line */
+/* Divider between the two sections: simple line */
 .page-divider {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
   margin: 4rem 0 3.25rem;
-}
-.page-divider::before,
-.page-divider::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-}
-.page-divider::before { background: linear-gradient(90deg, transparent, var(--color-accent)); }
-.page-divider::after  { background: linear-gradient(270deg, transparent, var(--color-accent)); }
-.page-divider__mark {
-  position: relative;
-  width: 0.6rem;
-  height: 0.6rem;
-  background: var(--color-accent);
-  transform: rotate(45deg);
-}
-.page-divider__mark::before {
-  content: "";
-  position: absolute;
-  inset: -0.4rem;
-  border: 1px solid var(--color-accent);
-  opacity: 0.55;
+  border-top: 1px solid var(--color-border);
 }
 
 /* Grid */
