@@ -369,6 +369,15 @@ img { max-width: 100%; display: block; }
 
 .work-card__links .work-card__link { margin-top: 0; }
 
+.work-card__status {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
 .work-card__link:hover { color: var(--color-accent-dk); }
 
 /* ===== EDUCATION ===== */
