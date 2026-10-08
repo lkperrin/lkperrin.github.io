@@ -48,6 +48,21 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 
 ## Works & Publications
 
+### Publication / Project (in progress)
+- **Title**: Meshcore repeater planning tool
+- **Date**: In progress
+- **Type**: Group academic project (Inria)
+- **Description**: Development of a platform suggesting optimal locations for LoRa repeaters in order to plan Meshcore mesh networks.
+- **Link**: 
+
+### Publication / Project (research track)
+- **Title**: Comparative evaluation and hybridization perspectives of Scheduled Service Network Design Problem formulations
+- **Date**: In progress
+- **Type**: Research project (Parcours recherche, replaces a course unit)
+- **Organization**: LS2N (https://www.ls2n.fr/)
+- **Description**: Implementation and experimental comparison of integer linear programming formulations for freight transport network planning.
+- **Link**: 
+
 ### Publication / Project 1
 - **Title**: Poster presentation at TASK/KASC workshop (Asteroseismology)
 - **Date**: June 2026
