@@ -278,6 +278,7 @@ img { max-width: 100%; display: block; }
 .inner-content {
   max-width: var(--max-w);
   margin: 0 auto;
+  width: 100%;
   padding: 2.5rem 1.5rem 3.5rem;
 }
 
@@ -341,7 +342,11 @@ img { max-width: 100%; display: block; }
 .works-list { display: flex; flex-direction: column; gap: 1.25rem; list-style: none; }
 
 /* ===== WORKS — collapsible cards (details/summary) ===== */
-.works-list:has(.fold) { gap: 0; }
+:root { --fold-inset: 1.5rem; }
+
+.works-list:has(.fold),
+.timeline:has(.fold),
+.education-list:has(.fold) { gap: 0; }
 
 .fold {
   background: transparent;
@@ -350,34 +355,42 @@ img { max-width: 100%; display: block; }
   transition: background-color var(--transition), border-color var(--transition);
 }
 
-.works-list li:last-child .fold:not([open]) { border-bottom-color: transparent; }
+.works-list li:last-child .fold:not([open]),
+.timeline li:last-child .fold:not([open]),
+.education-list li:last-child .fold:not([open]) { border-bottom-color: transparent; }
 
 .fold[open] {
-  margin: 0.5rem 0;
+  margin: 0.5rem calc(var(--fold-inset) * -1);
   background: var(--color-surface);
   border-color: #c9c9c2;
 }
 
-.fold__summary:hover .work-card__title { color: var(--color-accent); }
+.fold__summary:hover .work-card__title,
+.fold__summary:hover .timeline__title,
+.fold__summary:hover .education__degree { color: var(--color-accent); }
 
 .fold__summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
   cursor: pointer;
   list-style: none;
 }
 
 .fold__summary::-webkit-details-marker { display: none; }
 
+.fold[open] .fold__summary { padding-inline: var(--fold-inset); }
+
 .fold__summary:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: -2px;
 }
 
-.fold__summary .work-card__date {
+.fold__summary .work-card__date,
+.fold__summary .timeline__period,
+.fold__summary .education__period {
   display: block;
   margin-bottom: 0.3rem;
   font-size: 0.7rem;
@@ -387,7 +400,21 @@ img { max-width: 100%; display: block; }
   color: var(--color-muted);
 }
 
-.fold__summary .work-card__title {
+.fold__summary .timeline__company,
+.fold__summary .education__institution {
+  display: inline;
+  margin: 0 0 0 0.6rem;
+}
+
+.fold__summary .timeline__title,
+.fold__summary .education__degree { display: inline; }
+
+.fold[open] .fold__summary .timeline__company,
+.fold[open] .fold__summary .education__institution { display: none; }
+
+.fold__summary .work-card__title,
+.fold__summary .timeline__title,
+.fold__summary .education__degree {
   margin: 0;
   transition: color var(--transition);
 }
@@ -410,8 +437,10 @@ img { max-width: 100%; display: block; }
   transform: rotate(-135deg);
 }
 
+.fold__body > :last-child { margin-bottom: 0; }
+
 .fold__body {
-  margin: 0 1.5rem;
+  margin: 0 var(--fold-inset);
   padding: 0.9rem 0 1.25rem;
   border-top: 1px solid var(--color-border);
 }
@@ -488,6 +517,27 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
 }
 
+.education__year + .education__year { margin-top: 1rem; }
+
+.education__year-title {
+  margin-bottom: 0.25rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-primary);
+}
+
+.education__courses {
+  padding-left: 1.1rem;
+  list-style: disc;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.education__courses li::marker { color: var(--color-muted); }
+
 .certifications { margin-top: 2.5rem; }
 
 .certifications__title {
@@ -508,9 +558,7 @@ img { max-width: 100%; display: block; }
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem 1rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  padding: 1.5rem;
+  padding: 0.25rem 0 0.25rem;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--color-primary);
@@ -574,6 +622,7 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 599px) {
+  :root { --fold-inset: 0.75rem; }
   .profile__name { font-size: 1.8rem; }
   .interests-grid { grid-template-columns: 1fr; }
   .profile { padding-top: 4.5rem; }

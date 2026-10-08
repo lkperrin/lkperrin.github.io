@@ -27,13 +27,13 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 ### Position 1 (most recent)
 - **Title**: Reasearch internship in Astrophysics
 - **Company**: CEA
-- **Period**: March 2026 - Present
+- **Period**: March 2026 - August 2026
 - **Description**: My intership is on Asteroseismology ; I am working on new implementations for rotation profile inversions on Red giant branch (RGB). Also bringing some Machine learning solutions.
 - **Skills / Tech**: Python, Astrophysics, Linear algebra
 
 ### Position 2
 - **Title**: Data Scientist Intern
-- **Company**: Gaming Innovation Group (GIG)
+- **Company**: Gaming Innovation Group
 - **Period**: August 2025 – February 2026
 - **Description**: Dashboard creation (Tableau & Power BI), fraud detection, and development of Machine Learning models including revenue prediction and player classification.
 - **Skills / Tech**: Python, Machine Learning, Tableau, Power BI
@@ -85,13 +85,16 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 - **Link**: 
 ---
 
-## Education & Degrees
+## Education
 
 ### Formation 1 (in progress)
-- **Degree**: Engineering Degree, Specialisation "Data Science & Advanced optimization methods"
+- **Degree**: Engineering Degree: "Data Science" & "Advanced optimization methods"
 - **Institution**: IMT Atlantique
 - **Period**: 2023 – 2027
-- **Details**: Additional modules: "Stochastic Dynamic Models" / "Machine Learning" / "Operations Research"
+- **Details**:
+  - 3rd year: "Advanced Optimization Methods" (Constraint Programming, Stochastic programming, Operations Research, Organizations management)
+  - 2nd year: "Observation and Processing for Environmental Data" (Signal processing, Machine learning, Data Science and Information Processing for Sensor Data, Stochastic Dynamic Models)
+  - 1st year: General curriculum (Programming Python, Java, R; Probability and Statistics; Databases; Management)
 
 ### Formation 2 (exchange semester)
 - **Degree**: Data Science & Computer Engineering, Exchange Program
@@ -106,7 +109,7 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 - **Details**: Saint-Étienne, France
 
 ### Certifications
-- [IELTS 7.0 (2025)]
+- [IELTS (7)]
 
 ---
 

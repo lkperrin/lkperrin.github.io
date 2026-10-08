@@ -23,7 +23,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
           <span data-i18n="back">Back</span>
         </a>
-        <h1 class="inner-header__title" data-i18n="edu.heading">Education & Degrees</h1>
+        <h1 class="inner-header__title" data-i18n="edu.heading">Education</h1>
       </div>
     </header>
 
@@ -32,28 +32,81 @@
       <ul class="education-list" data-i18n-aria="edu.aria" aria-label="Education">
 
         <!-- Formation 1 — in progress -->
-        <li class="education__item">
-          <p class="education__period">2023 – 2027</p>
-          <h2 class="education__degree" data-i18n="edu.1.degree">Engineering Degree, Specialisation "Data Science & Advanced optimization methods"</h2>
-          <p class="education__institution"><a href="https://www.imt-atlantique.fr" target="_blank" rel="noopener noreferrer" class="link--discreet">IMT Atlantique</a>&nbsp;·&nbsp; Brest &amp; Nantes</p>
-          <p class="education__details" data-i18n-html="edu.1.details">
-            Additional modules: <em>Stochastic Dynamic Models</em> /
-            <em>Machine Learning</em> / <em>Operations Research</em>
-          </p>
+        <li>
+          <details class="fold">
+            <summary class="fold__summary">
+              <span class="fold__heading">
+                <span class="education__period">2023 – 2027</span>
+                <h2 class="education__degree" data-i18n="edu.1.degree">Engineering Degree: "Data Science" &amp; "Advanced optimization methods"</h2>
+                <span class="education__institution">IMT Atlantique</span>
+              </span>
+              <span class="fold__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="fold__body">
+              <p class="education__institution"><a href="https://www.imt-atlantique.fr" target="_blank" rel="noopener noreferrer" class="link--discreet">IMT Atlantique</a>&nbsp;·&nbsp; Brest &amp; Nantes</p>
+              <div class="education__year">
+                <h3 class="education__year-title" data-i18n="edu.1.y3">3rd year: "Advanced Optimization Methods"</h3>
+                <ul class="education__courses">
+                  <li>Constraint Programming</li>
+                  <li>Stochastic programming</li>
+                  <li>Operations Research</li>
+                  <li>Organizations management</li>
+                </ul>
+              </div>
+              <div class="education__year">
+                <h3 class="education__year-title" data-i18n="edu.1.y2">2nd year: "Observation and Processing for Environmental Data"</h3>
+                <ul class="education__courses">
+                  <li>Signal processing</li>
+                  <li>Machine learning</li>
+                  <li>Data Science and Information Processing for Sensor Data</li>
+                  <li>Stochastic Dynamic Models</li>
+                </ul>
+              </div>
+              <div class="education__year">
+                <h3 class="education__year-title" data-i18n="edu.1.y1">1st year: General curriculum</h3>
+                <ul class="education__courses">
+                  <li>Programming Python, Java, R</li>
+                  <li>Probability and Statistics</li>
+                  <li>Databases</li>
+                  <li>Management</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </li>
 
         <!-- Formation 2 — exchange -->
-        <li class="education__item">
-          <p class="education__period" data-i18n="edu.2.period">February – August 2025</p>
-          <h2 class="education__degree" data-i18n="edu.2.degree">Data Science & Computer Engineering, Exchange Program</h2>
-          <p class="education__institution"><a href="https://poli.ufrj.br" target="_blank" rel="noopener noreferrer" class="link--discreet">Escola Politécnica, UFRJ</a><span data-i18n="edu.2.place">&nbsp;·&nbsp; Rio de Janeiro, Brazil</span></p>
+        <li>
+          <details class="fold">
+            <summary class="fold__summary">
+              <span class="fold__heading">
+                <span class="education__period" data-i18n="edu.2.period">February – August 2025</span>
+                <h2 class="education__degree" data-i18n="edu.2.degree">Data Science & Computer Engineering, Exchange Program</h2>
+                <span class="education__institution">Escola Politécnica, UFRJ</span>
+              </span>
+              <span class="fold__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="fold__body">
+              <p class="education__institution"><a href="https://poli.ufrj.br" target="_blank" rel="noopener noreferrer" class="link--discreet">Escola Politécnica, UFRJ</a><span data-i18n="edu.2.place">&nbsp;·&nbsp; Rio de Janeiro, Brazil</span></p>
+            </div>
+          </details>
         </li>
 
         <!-- Formation 3 -->
-        <li class="education__item">
-          <p class="education__period">2021 – 2023</p>
-          <h2 class="education__degree" data-i18n="edu.3.degree">Classes Préparatoires aux Grandes Écoles (PCSI / PC*)</h2>
-          <p class="education__institution">Lycée Claude Fauriel&nbsp;·&nbsp; Saint-Étienne, France</p>
+        <li>
+          <details class="fold">
+            <summary class="fold__summary">
+              <span class="fold__heading">
+                <span class="education__period">2021 – 2023</span>
+                <h2 class="education__degree" data-i18n="edu.3.degree">Classes Préparatoires aux Grandes Écoles (PCSI / PC*)</h2>
+                <span class="education__institution">Lycée Claude Fauriel</span>
+              </span>
+              <span class="fold__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="fold__body">
+              <p class="education__institution">Lycée Claude Fauriel&nbsp;·&nbsp; Saint-Étienne, France</p>
+            </div>
+          </details>
         </li>
 
       </ul>
@@ -64,7 +117,7 @@
         <ul class="cert-list">
           <li class="cert-badge">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-            <span data-i18n="cert.ielts">IELTS 7.0 (2025)</span>
+            <span data-i18n="cert.ielts">IELTS (7)</span>
             <a href="assets/pdf/IELTS.pdf" target="_blank" rel="noopener noreferrer" class="work-card__link" data-i18n="cert.view">View certificate →</a>
           </li>
         </ul>
