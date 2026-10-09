@@ -28,14 +28,21 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 - **Title**: Reasearch internship in Astrophysics
 - **Company**: CEA
 - **Period**: March 2026 - August 2026
-- **Description**: My intership is on Asteroseismology ; I am working on new implementations for rotation profile inversions on Red giant branch (RGB). Also bringing some Machine learning solutions.
+- **Description**: 
+  - Worked on the inversion of internal rotation profiles of red giant stars, incorporating new physical effects, and built a fully automated inversion pipeline
+  - Applied the pipeline to real observational data, with results presented as a scientific poster at the TASC10/KASC17 conference
+  - Gained experience across different methods: MCMC with uncertainty quantification, machine-learning approaches, numerical optimization
+  - Co-author of scientific papers currently in preparation
 - **Skills / Tech**: Python, Astrophysics, Linear algebra
 
 ### Position 2
 - **Title**: Data Scientist Intern
 - **Company**: Gaming Innovation Group
 - **Period**: August 2025 – February 2026
-- **Description**: Dashboard creation (Tableau & Power BI), fraud detection, and development of Machine Learning models including revenue prediction and player classification.
+- **Description**: 
+  - Fraud detection using data analysis techniques
+  - Development of machine learning algorithms to identify suspicious patterns
+  - Mathematical optimization applied to trading strategies
 - **Skills / Tech**: Python, Machine Learning, Tableau, Power BI
 
 ### Position 3
@@ -97,10 +104,11 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
   - 1st year: General curriculum (Programming Python, Java, R; Probability and Statistics; Databases; Management)
 
 ### Formation 2 (exchange semester)
-- **Degree**: Data Science & Computer Engineering, Exchange Program
+- **Degree**: Academic exchange in computer science
 - **Institution**: Escola Politécnica, UFRJ
 - **Period**: February – August 2025
 - **Details**: Rio de Janeiro, Brazil
+  - Courses: Computational Linear Algebra, Numerical Methods, Machine Learning, Data Mining
 
 ### Formation 3
 - **Degree**: Classes Préparatoires aux Grandes Écoles (PCSI / PC*)
