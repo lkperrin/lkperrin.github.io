@@ -141,3 +141,8 @@ Curious, hands-on, and always keen to tackle complex problems at the intersectio
 - **Type**: Personal project (website)
 - **URL**: https://website-astero.vercel.app/
 - **Description**: Website for physics/astrophysics researchers to discover asteroseismology.
+
+### Open-source contribution to Lichess
+- **Type**: Open-source contribution
+- **URL**: https://github.com/lichess-org
+- **Description**: Active member of the Lichess community. I recently started to work on fixing front-end issues, and I am now working on deeper contributions, such as anti-cheat features.

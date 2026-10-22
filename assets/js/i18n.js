@@ -108,6 +108,9 @@ const TRANSLATIONS = {
     'proj.1.title': 'Creation of an interactive website introducing asteroseismology to a scientific audience',
     'proj.1.description': 'A website for physics and astrophysics researchers who want to discover asteroseismology, the study of stellar interiors through their oscillations.',
     'proj.1.link': 'Visit the website →',
+    'proj.2.title': 'Open-source contribution to Lichess',
+    'proj.2.description': 'Active member of the Lichess community. I recently started to work on fixing front-end issues, and I am now working on deeper contributions, such as anti-cheat features.',
+    'proj.2.link': 'Lichess on GitHub →',
 
     /* --- interests --- */
     'page.title.interests': 'Hobbies & Community Involvement | Lucas Perrin',
@@ -236,6 +239,9 @@ const TRANSLATIONS = {
     'proj.1.title': "Création d'un site interactif d'introduction à l'astérosismologie pour un public scientifique",
     'proj.1.description': "Un site web destiné aux chercheurs en physique et astrophysique souhaitant découvrir l'astérosismologie, l'étude de l'intérieur des étoiles à travers leurs oscillations.",
     'proj.1.link': 'Visiter le site →',
+    'proj.2.title': 'Contribution open source à Lichess',
+    'proj.2.description': "Membre actif de la communauté Lichess. J'ai récemment commencé à corriger des problèmes front-end, et je travaille désormais sur des contributions plus approfondies, comme des fonctionnalités anti-triche.",
+    'proj.2.link': 'Lichess sur GitHub →',
 
     /* --- interests --- */
     'page.title.interests': 'Hobbies et engagement associatif | Lucas Perrin',
