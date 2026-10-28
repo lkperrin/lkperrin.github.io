@@ -28,7 +28,7 @@ const TRANSLATIONS = {
     'profile.link.cv.href': 'assets/pdf/cv_eng.pdf',
     'profile.bio1': 'Final-year student at IMT Atlantique, I specialized in Data Science and Machine Learning in my second year, and am now pursuing Advanced Optimization Methods.',
     'profile.bio2': 'I enjoy working on complex projects with concrete impact, especially by designing tools and algorithms. I am particularly interested in applied AI and in optimizing existing processes. Naturally curious, I like thinking about topics from a wide range of fields.',
-    'profile.bio3': 'I am looking for a final-year internship starting in April 2027, as a Data Scientist, AI Engineer or Data/AI Consultant.',
+    'profile.bio3': 'I am looking for a final-year internship starting in April 2027, as a Data Scientist, a Data/AI Consultant, or in any role focused on optimization and AI with concrete applications.',
     'profile.location': 'Paris, France',
     'nav.aria': 'Site navigation',
 
@@ -159,7 +159,7 @@ const TRANSLATIONS = {
     'profile.link.cv.href': 'assets/pdf/cv.pdf',
     'profile.bio1': "Étudiant en dernière année à IMT Atlantique, je me suis spécialisé en Data Science et Machine Learning en 2ème année, et je poursuis actuellement en Méthodes avancées d'optimisation.",
     'profile.bio2': "J'aime travailler sur des projets complexes à impact concret, notamment en concevant des outils et des algorithmes. Je m'intéresse particulièrement à l'IA appliquée et à l'optimisation de processus existants. Curieux de nature, j'apprécie réfléchir à des domaines variés.",
-    'profile.bio3': "Je suis à la recherche d'un stage de fin d'études à partir d'avril 2027, en tant que Data Scientist, Ingénieur IA ou Consultant Data/IA.",
+    'profile.bio3': "Je recherche un stage de fin d'études à partir d'avril 2027 : Data Scientist, Consultant Data/IA, ou tout poste mêlant optimisation et IA pour des applications concrètes.",
     'profile.location': 'Paris, France',
     'nav.aria': 'Navigation du site',
 
