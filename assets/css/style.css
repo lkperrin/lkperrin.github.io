@@ -500,6 +500,14 @@ img { max-width: 100%; display: block; }
   transition: color var(--transition);
 }
 
+.work-card__note {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.fold:not([open]) .work-card__note { display: none; }
+
 .work-card__links .work-card__link { margin-top: 0; }
 
 .work-card__status {

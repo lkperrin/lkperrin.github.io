@@ -111,6 +111,9 @@ const TRANSLATIONS = {
     'proj.2.title': 'Open-source contribution to Lichess',
     'proj.2.description': 'Active member of the Lichess community. I recently started to work on fixing front-end issues, and I am now working on deeper contributions, such as anti-cheat features.',
     'proj.2.link': 'Lichess on GitHub →',
+    'proj.3.title': 'Automated personal newsletter',
+    'proj.3.description': 'Creation of an automated newsletter on various current topics. Weekly for now, it will soon become daily.',
+    'proj.3.link': 'Read the newsletter →',
 
     /* --- interests --- */
     'page.title.interests': 'Hobbies & Community Involvement | Lucas Perrin',
@@ -242,6 +245,9 @@ const TRANSLATIONS = {
     'proj.2.title': 'Contribution open source à Lichess',
     'proj.2.description': "Membre actif de la communauté Lichess. J'ai récemment commencé à corriger des problèmes front-end, et je travaille désormais sur des contributions plus approfondies, comme des fonctionnalités anti-triche.",
     'proj.2.link': 'Lichess sur GitHub →',
+    'proj.3.title': 'Newsletter personnelle automatisée',
+    'proj.3.description': "Création d'une newsletter automatisée sur différents sujets d'actualité. Hebdomadaire pour le moment, elle deviendra bientôt quotidienne.",
+    'proj.3.link': 'Lire la newsletter →',
 
     /* --- interests --- */
     'page.title.interests': 'Hobbies et engagement associatif | Lucas Perrin',

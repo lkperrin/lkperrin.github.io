@@ -2,7 +2,7 @@
 
 ## Context
 Static portfolio site (HTML/CSS/JS) deployed on GitHub Pages.
-Final URL: https://<your-username>.github.io/perso_site
+Final URL: https://lkperrin.github.io (repo: lkperrin/lkperrin.github.io)
 
 ## Stack
 - Semantic HTML5
