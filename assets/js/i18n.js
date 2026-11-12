@@ -1,11 +1,8 @@
-/* ===== I18N — bilingual content (EN default, FR optional) ===== */
-
 const DEFAULT_LANG = 'en';
 const STORAGE_KEY = 'site-lang';
 
 const TRANSLATIONS = {
   en: {
-    /* --- shared --- */
     'back': 'Back',
     'back.aria': 'Back to home',
     'nav.experience': 'Experience',
@@ -15,7 +12,6 @@ const TRANSLATIONS = {
     'nav.interests': 'Hobbies & Community Involvement',
     'lang.aria': 'Language selection',
 
-    /* --- index --- */
     'page.title.home': 'Lucas Perrin',
     'profile.photo.alt': 'Portrait of Lucas Perrin',
     'profile.title': 'Student at IMT Atlantique · Advanced Optimization Methods',
@@ -32,7 +28,6 @@ const TRANSLATIONS = {
     'profile.location': 'Paris, France',
     'nav.aria': 'Site navigation',
 
-    /* --- experience --- */
     'page.title.experience': 'Experience | Lucas Perrin',
     'exp.heading': 'Professional Experience',
     'exp.aria': 'Professional experience timeline',
@@ -51,7 +46,6 @@ const TRANSLATIONS = {
     'exp.3.title': 'Operator Intern',
     'exp.3.description': 'Contribution to the renovation of VBCI armored vehicles. Immersion in an industrial environment with observation of engineering and production processes.',
 
-    /* --- works --- */
     'page.title.works': 'Works & Publications | Lucas Perrin',
     'works.heading': 'Works & Publications',
     'works.aria': 'Works and publications',
@@ -80,7 +74,6 @@ const TRANSLATIONS = {
     'works.3.description': 'Detection of AIS communications by satellite in the presence of multiple access interference. Involved signal processing, satellite specifications study, project management, MATLAB, and Python.',
     'works.3.link1': 'Report',
 
-    /* --- education --- */
     'page.title.education': 'Education | Lucas Perrin',
     'edu.heading': 'Education',
     'edu.aria': 'Education',
@@ -101,7 +94,6 @@ const TRANSLATIONS = {
     'cert.ielts': 'IELTS (7)',
     'cert.view': 'View certificate →',
 
-    /* --- projects --- */
     'page.title.projects': 'Personal Projects | Lucas Perrin',
     'proj.heading': 'Personal Projects',
     'proj.aria': 'Personal projects',
@@ -115,7 +107,6 @@ const TRANSLATIONS = {
     'proj.3.description': 'Creation of an automated newsletter on various current topics. Weekly for now, it will soon become daily.',
     'proj.3.link': 'Read the newsletter →',
 
-    /* --- interests --- */
     'page.title.interests': 'Hobbies & Community Involvement | Lucas Perrin',
     'int.heading': 'Hobbies & Community Involvement',
     'int.hobbies.heading': 'Hobbies',
@@ -139,7 +130,6 @@ const TRANSLATIONS = {
   },
 
   fr: {
-    /* --- shared --- */
     'back': 'Retour',
     'back.aria': "Retour à l'accueil",
     'nav.experience': 'Expériences',
@@ -149,7 +139,6 @@ const TRANSLATIONS = {
     'nav.interests': 'Hobbies et engagement associatif',
     'lang.aria': 'Choix de la langue',
 
-    /* --- index --- */
     'page.title.home': 'Lucas Perrin',
     'profile.photo.alt': 'Portrait de Lucas Perrin',
     'profile.title': "Étudiant à IMT Atlantique · Méthodes avancées d'optimisation",
@@ -166,7 +155,6 @@ const TRANSLATIONS = {
     'profile.location': 'Paris, France',
     'nav.aria': 'Navigation du site',
 
-    /* --- experience --- */
     'page.title.experience': 'Expériences | Lucas Perrin',
     'exp.heading': 'Expériences professionnelles',
     'exp.aria': 'Parcours professionnel',
@@ -185,7 +173,6 @@ const TRANSLATIONS = {
     'exp.3.title': 'Stagiaire opérateur',
     'exp.3.description': "Participation à la rénovation des véhicules blindés VBCI. Immersion en milieu industriel avec observation des processus d'ingénierie et de production.",
 
-    /* --- works --- */
     'page.title.works': 'Travaux & Publications | Lucas Perrin',
     'works.heading': 'Travaux & Publications',
     'works.aria': 'Travaux et publications',
@@ -214,7 +201,6 @@ const TRANSLATIONS = {
     'works.3.description': "Détection de communications AIS par satellite en présence d'interférences d'accès multiple. Traitement du signal, étude des spécifications satellite, gestion de projet, MATLAB et Python.",
     'works.3.link1': 'Rapport',
 
-    /* --- education --- */
     'page.title.education': 'Formation | Lucas Perrin',
     'edu.heading': 'Formation',
     'edu.aria': 'Formation',
@@ -235,7 +221,6 @@ const TRANSLATIONS = {
     'cert.ielts': 'IELTS (7)',
     'cert.view': 'Voir le certificat →',
 
-    /* --- projects --- */
     'page.title.projects': 'Projets personnels | Lucas Perrin',
     'proj.heading': 'Projets personnels',
     'proj.aria': 'Projets personnels',
@@ -249,7 +234,6 @@ const TRANSLATIONS = {
     'proj.3.description': "Création d'une newsletter automatisée sur différents sujets d'actualité. Hebdomadaire pour le moment, elle deviendra bientôt quotidienne.",
     'proj.3.link': 'Lire la newsletter →',
 
-    /* --- interests --- */
     'page.title.interests': 'Hobbies et engagement associatif | Lucas Perrin',
     'int.heading': 'Hobbies et engagement associatif',
     'int.hobbies.heading': 'Hobbies',
@@ -286,7 +270,7 @@ const storeLang = (lang) => {
   try {
     localStorage.setItem(STORAGE_KEY, lang);
   } catch (e) {
-    /* storage unavailable — language simply resets on next visit */
+    // storage unavailable: the language resets on the next visit
   }
 };
 

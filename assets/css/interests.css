@@ -1,4 +1,3 @@
-/* ===== INTERESTS PAGE — scoped to body.page-interests ===== */
 .page-interests {
   --int-ink:     #f4f2ec;
   --int-ink-dim: rgba(244, 242, 236, 0.85);
@@ -12,7 +11,6 @@
   font-size: 1.3rem;
 }
 
-/* Sections */
 .page-section__title {
   margin-bottom: 1.5rem;
   font-family: var(--font-display);
@@ -30,13 +28,11 @@
   background: var(--color-accent);
 }
 
-/* Divider between the two sections: simple line */
 .page-divider {
   margin: 4rem 0 3.25rem;
   border-top: 1px solid var(--color-border);
 }
 
-/* Grid */
 .page-interests .inner-content { padding: 2.5rem 1.5rem 4.5rem; }
 .page-interests .inner-header__inner,
 .page-interests .inner-content { max-width: 1240px; }
@@ -46,7 +42,6 @@
   gap: 1.25rem;
 }
 
-/* Card */
 .page-interests .interest-card {
   position: relative;
   isolation: isolate;
@@ -63,13 +58,11 @@
   box-shadow: 0 10px 24px -16px rgba(0, 0, 0, 0.5);
 }
 
-/* Photo layer */
 .interest-card__media {
   position: absolute;
   inset: 0;
   z-index: -2;
   overflow: hidden;
-  /* shown until a photo is added */
   background:
     radial-gradient(rgba(244, 242, 236, 0.1) 1px, transparent 1.5px) 0 0 / 16px 16px,
     radial-gradient(120% 90% at 85% 0%, rgba(74, 111, 165, 0.55), transparent 60%),
@@ -85,7 +78,6 @@
   filter: saturate(0.9) brightness(0.9);
 }
 
-/* Readability gradient + accent tint */
 .interest-card::before {
   content: "";
   position: absolute;
@@ -96,7 +88,6 @@
     linear-gradient(135deg, rgba(74, 111, 165, 0.28), transparent 55%);
 }
 
-/* Thin inner frame */
 .interest-card::after {
   content: "";
   position: absolute;
@@ -131,7 +122,6 @@
   color: var(--int-ink-dim);
 }
 
-/* Chess: slow crossfade between the four photos */
 .interest-card__media--slides img {
   opacity: 0;
   animation: interest-fade 16s infinite;
@@ -149,7 +139,6 @@
   100% { opacity: 0; }
 }
 
-/* Two-photo variant (community involvement) */
 .interest-card__media--pair img { animation-name: interest-fade-pair; animation-duration: 12s; }
 .interest-card__media--pair img:nth-child(2) { animation-delay: 6s; }
 @keyframes interest-fade-pair {
@@ -160,7 +149,6 @@
   100% { opacity: 0; }
 }
 
-/* Three-photo variant (astrophysics) */
 .interest-card__media--trio img { animation-name: interest-fade-trio; animation-duration: 12s; }
 @keyframes interest-fade-trio {
   0%   { opacity: 0; }
@@ -170,16 +158,13 @@
   100% { opacity: 0; }
 }
 
-/* AI: light images (logos, leaderboard) — darken so the text stays legible; the two dark screenshots keep their brightness */
 .interest-card--light .interest-card__media img:is(:first-child, :last-child) { filter: brightness(0.55) saturate(1.1); }
 
-/* Strong figures in descriptions */
 .page-interests .interest-card__description strong {
   color: var(--int-ink);
   font-weight: 600;
 }
 
-/* Tablet: 2 columns for hobbies, 3 for involvement */
 @media (min-width: 768px) {
   .page-interests .interests-grid { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .page-interests .interest-card { min-height: 21rem; padding: 1.5rem; }
@@ -190,7 +175,6 @@
   .page-interests .involve-grid .interest-card__title { font-size: 1.2rem; }
 }
 
-/* Desktop: the 4 hobbies side by side, narrower and taller */
 @media (min-width: 1200px) {
   .page-interests .interests-grid:not(.involve-grid) { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
   .page-interests .interests-grid:not(.involve-grid) .interest-card { min-height: 25rem; padding: 1.25rem; }

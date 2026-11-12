@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
-/* ===== VARIABLES ===== */
 :root {
   --color-bg:       #f8f7f2;
   --color-surface:  #ffffff;
@@ -16,7 +15,6 @@
   --transition:     0.15s ease;
 }
 
-/* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
 
@@ -43,14 +41,12 @@ a:hover { color: var(--color-accent-dk); }
 }
 img { max-width: 100%; display: block; }
 
-/* ===== LAYOUT ===== */
 .page-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* ===== LANGUAGE SWITCH ===== */
 .lang-switch {
   position: fixed;
   top: 1rem;
@@ -96,7 +92,6 @@ img { max-width: 100%; display: block; }
   user-select: none;
 }
 
-/* ===== HOME — PROFILE ===== */
 .profile {
   padding: 2.5rem 1.5rem 1rem;
   max-width: var(--max-w);
@@ -140,7 +135,6 @@ img { max-width: 100%; display: block; }
   color: var(--color-muted);
 }
 
-/* ===== PROFILE SOCIAL LINKS ===== */
 .profile__links {
   display: flex;
   align-items: center;
@@ -186,7 +180,6 @@ img { max-width: 100%; display: block; }
   gap: 0.25rem;
 }
 
-/* ===== HOME — NAV LIST ===== */
 .nav-section {
   flex: 1;
   padding: 1.25rem 1.5rem 2rem;
@@ -239,7 +232,6 @@ img { max-width: 100%; display: block; }
   color: var(--color-accent);
 }
 
-/* ===== INNER PAGES — HEADER ===== */
 .inner-header {
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
@@ -282,7 +274,6 @@ img { max-width: 100%; display: block; }
   padding: 2.5rem 1.5rem 3.5rem;
 }
 
-/* ===== SHARED CARD STYLE ===== */
 .timeline__card,
 .work-card,
 .education__item {
@@ -291,7 +282,6 @@ img { max-width: 100%; display: block; }
   padding: 1.5rem;
 }
 
-/* ===== SHARED DATE LABEL ===== */
 .timeline__period,
 .work-card__date,
 .education__period {
@@ -303,7 +293,6 @@ img { max-width: 100%; display: block; }
   margin-bottom: 0.3rem;
 }
 
-/* ===== SHARED CARD TITLE ===== */
 .timeline__title,
 .work-card__title,
 .education__degree {
@@ -315,7 +304,6 @@ img { max-width: 100%; display: block; }
   margin-bottom: 0.15rem;
 }
 
-/* ===== EXPERIENCE — flat list, no timeline decoration ===== */
 .timeline {
   list-style: none;
   display: flex;
@@ -350,10 +338,8 @@ img { max-width: 100%; display: block; }
 
 .timeline__list li::marker { color: var(--color-muted); }
 
-/* ===== WORKS ===== */
 .works-list { display: flex; flex-direction: column; gap: 1.25rem; list-style: none; }
 
-/* ===== WORKS — collapsible cards (details/summary) ===== */
 :root { --fold-inset: 1.5rem; }
 
 .works-list:has(.fold),
@@ -457,7 +443,6 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid var(--color-border);
 }
 
-
 .timeline__card,
 .work-card,
 .education__item { padding: 1.25rem 1.5rem; }
@@ -521,7 +506,6 @@ img { max-width: 100%; display: block; }
 
 .work-card__link:hover { color: var(--color-accent-dk); }
 
-/* ===== EDUCATION ===== */
 .education-list { display: flex; flex-direction: column; gap: 1.25rem; list-style: none; }
 
 .education__institution {
@@ -586,7 +570,6 @@ img { max-width: 100%; display: block; }
 
 .cert-badge svg { display: none; }
 
-/* ===== INTERESTS ===== */
 .interests-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -624,7 +607,6 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (min-width: 600px) {
   .profile__inner {
     flex-direction: row;
